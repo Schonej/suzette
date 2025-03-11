@@ -1,0 +1,99 @@
+/* components/Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #1e3a8a; /* Dark blue, common in fintech */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navLinks li a:hover {
+  color: #93c5fd; /* Light blue hover effect */
+}
+
+.cta {
+  background: #3b82f6; /* Green CTA, fintech-friendly */
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.cta a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1e3a8a;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navLinks.active {
+    display: flex;
+  }
+
+  .hamburger span.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger span.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger span.open:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}

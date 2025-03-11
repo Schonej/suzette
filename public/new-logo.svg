@@ -1,0 +1,30 @@
+<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <!-- Center the entire logo -->
+  <g transform="translate(85, 10)">
+    <!-- "P" Shape (Traced to match the original) -->
+    <path
+      d="M0 0 H40 C50 0 50 10 40 10 H20 V30 H40 C50 30 50 40 40 40 H10 V80 H0 Z"
+      fill="#ffffff"
+    />
+
+    <!-- "3" Shape (Traced to match the original) -->
+    <path
+      d="M60 0 H100 C110 0 110 10 100 10 H80 V30 H100 C110 30 110 40 100 40 H80 V50 H90 C100 50 100 60 90 60 H70 V80 H60 Z"
+      fill="#ffffff"
+    />
+  </g>
+
+  <!-- "Prominent Premier Partners" Text (Centered below the symbol) -->
+  <text
+    x="150"
+    y="120"
+    font-family="Montserrat, sans-serif"
+    font-size="16"
+    font-weight="500"
+    letter-spacing="1"
+    fill="#ffffff"
+    text-anchor="middle"
+  >
+    Prominent Premier Partners
+  </text>
+</svg>
