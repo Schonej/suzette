@@ -14,7 +14,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="/p3logo-svg.svg" alt="Logo" width={150} height={150} />
+          <Image src="/suzette/p3logo-svg.svg" alt="Logo" width={150} height={150} />
         </Link>
       </div>
       <div className={styles.hamburger} onClick={toggleMenu}>
